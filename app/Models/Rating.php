@@ -27,6 +27,6 @@ class Rating extends Model
             }
             $avg = $avg / $post->ratings->count();
         }
-        return $avg;
+        return round($avg, 1);
     }
 }
