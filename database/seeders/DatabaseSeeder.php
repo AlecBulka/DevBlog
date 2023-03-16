@@ -25,19 +25,27 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         User::create([
-            'name' => 'Admin',
-            'username' => 'Admin',
-            'email' => 'admin@devblog.com',
-            'password' => Hash::make('Alec12345'),
+            'name' => 'Mark',
+            'username' => 'Mark98',
+            'email' => 'mark98@devblog.com',
+            'password' => Hash::make('Mark12345$'),
             'role_id' => 3
         ]);
 
         User::create([
-            'name' => 'Alec',
-            'username' => 'Loader',
-            'email' => 'loader@devblog.com',
-            'password' => Hash::make('Alec12345'),
+            'name' => 'Andrew',
+            'username' => 'Andrew96',
+            'email' => 'andrew96@devblog.com',
+            'password' => Hash::make('Andrew12345$'),
             'role_id' => 2
+        ]);
+
+        User::create([
+            'name' => 'John',
+            'username' => 'John97',
+            'email' => 'john97@devblog.com',
+            'password' => Hash::make('John12345$'),
+            'role_id' => 1
         ]);
 
         $roles = [
